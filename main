@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website with JavaScript Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('about')">About</button>
+      <button onclick="showPage('contact')">Contact</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page">
+      <h2>Home Page</h2>
+      <p>Welcome to the homepage! This is where your main content goes.</p>
+    </section>
+
+    <section id="about" class="page hidden">
+      <h2>About Us</h2>
+      <p>Learn more about us on this page.</p>
+    </section>
+
+    <section id="contact" class="page hidden">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out using the form below.</p>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
